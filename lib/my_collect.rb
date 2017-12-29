@@ -1,14 +1,13 @@
 
-
 def my_collect(array)
   if block_given?
     i = 0
-    newArray = []
+    nArray = []
     while i < array.length
-      newArray << yield(array[i])
-      i + 1
+      nArray << yield(array[i])
+      i = i + 1
     end
-      newArray
+      nArray
   else
       "Block Missing!"
   end
