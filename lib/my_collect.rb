@@ -5,7 +5,7 @@ def my_collect(array)
     nArray = []
     while i < array.length
       nArray << yield(array[i])
-      i + 1
+      i = i + 1
     end
       nArray
   else
